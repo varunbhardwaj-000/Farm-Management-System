@@ -381,6 +381,38 @@ void management()
  users();
 }
 
+void funds()
+{
+ int sum=0, sum2=0,num=0;
+FILE *fund;
+fund=fopen("funds.txt","r+");
+if(fund==NULL)
+   {
+    printf("\nfile has no previous funds");
+   }
+
+    while(!feof(fund))
+    {
+        fscanf(fund,"%d",&num);
+    }
+fclose(fund);
+printf("\nprevious funds are:- %d",num);
+printf("\nenter new funds amount\n");
+scanf("%d",&sum);
+num=sum+num;
+FILE *fund2;
+fund2=fopen("funds.txt","w+");
+fprintf(fund2,"%d",num);
+fclose(fund2);
+printf("\n Press enter to go back.....");
+getch();
+system("cls");
+users();
+
+
+}
+
+
 int login()
 {
     system("cls");
