@@ -372,6 +372,46 @@ void management()
  users();
 }
 
+int login()
+{
+    system("cls");
+    printf("\t\t\t                    FARMER LOGIN\n");
+    printf("******************************************************************************************************");
+    int att=0	;
+    int confirm=0;
+    char user[15];
+    char pass[15];
+    char original_user[25]="admin";
+    char original_pass[15]="admin";
+    do
+    {
+        printf("\n\nEnter you USER NAME:");
+        scanf("%s",user);
+        printf("Enter your PASSWORD:");
+        scanf("%s",pass);
+        if (strcmp(user,original_user)==0 && strcmp(pass,original_pass)==0)
+        {
+           printf("\n\nUSER VERIFIED\n\n\npress ENTER to continue.........");
+           confirm=confirm+10;
+           getch();
+           return confirm;
+           break;
+        }
+        else
+        {
+            printf("\nPassword in incorrect,Try Again ");
+            att++;
+            getch();
+        }
+    }while(att<=2);
+    if(att>2)
+    {
+    printf("\nYou have tried too many time,..ACCESS DENIED");
+    getch();
+    end();
+    }
+}
+
 
 
 //Main function.....
