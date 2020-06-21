@@ -43,7 +43,7 @@ void intro()
 {
     printf("\n\t\t\t\t\t     WELCOME");
     printf("\n\t\t\t\t\t        TO  ");
-    printf("\n\t\t\t\t  AGRICULTURAL MANAGEMENT SYSTEM");
+    printf("\n\t\t\t\t  FARM MANAGEMENT SYSTEM");
     printf("\n\n\n\n\tAgriculture Guidance System is a platform is to help farmers by providing \n\tall kinds of agriculture related information. ");
     printf("It assists the farmers to give\n\tbest practice of farming process for improving their productivity and \n\tprofitability.");
     printf("This system allows you to sell and buy crops,support from govt,knowledge on farming.");
@@ -161,7 +161,7 @@ void chalk_soil()
 {
     printf("Chalk soil can be either light or heavy but always highly alkaline due to the calcium carbonate or lime\nwithin its structure.");
     printf("As these soils are alkaline they will not support the growth of ericaceous plants\nthat require acidic soils to grow.");
-    printf("If a chalky soil shows signs of visible white lumps then they can’t be acidified\nand gardeners should be resigned to only choose");
+    printf("If a chalky soil shows signs of visible white lumps then they canâ€™t be acidified\nand gardeners should be resigned to only choose");
     printf("plants that prefer an alkaline soil.");
     printf("\n\n\nTYPES OF CROPS GROWN IN THIS SOIL: Cabbage family plants,Wild flowers,");
     printf("\n\n\nFERTILIZERS AND NUTRIENTS USED: Sea weed liquid and vermicompost");
@@ -316,7 +316,7 @@ void buy()
 
 void end()
 {
-   printf("\t\t\t\t\t\t  AGRICULTURAL MANGEMENT SYSTEM");
+   printf("\t\t\t\t\t\t  FARM MANGEMENT SYSTEM");
    printf("\n************************************************************************************************************************");
    printf("\n\n\n\t\t\t\t\t\t    THANK YOU.......");
    exit(0);
@@ -378,7 +378,7 @@ void management()
 int main()
 {
     intro();
-    printf("\n\t\t\t\t  AGRICULTURAL MANAGEMENT SYSTEM");
+    printf("\n\t\t\t\t  FARM MANAGEMENT SYSTEM");
     users();
     return 0;
 }
