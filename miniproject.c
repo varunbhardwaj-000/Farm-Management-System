@@ -250,7 +250,7 @@ void customer()
 void add_items()
 {
     char crop[20];
-    int i,we;
+    int we;
     int wpq;
     FILE *fptr;
     fptr=fopen("input.txt","a");
@@ -318,7 +318,9 @@ void support()
     FILE *help;
     help=fopen("available.txt","w+");
     printf("enter your problems\n");
-    getchar();
+    getchar();                 /*Since gets() or fgets() is getting skipped due to an already present '\n'
+                                 from previous inputs in stdin, calling getchar() would lead to itself getting
+				 skipped instead of gets() or fgets() or any other similar function*/
     gets(ch);
     fprintf(help,"%s",ch);
     fclose(help);
@@ -335,7 +337,7 @@ void end()
    exit(0);
 }
 void management()
-{
+{                               //function for management departs who seeks help from farmers and provide funds
  int confirm=login_man();
  if(confirm==10)
  {
@@ -371,12 +373,6 @@ void management()
 
        funds();
    }
-   /*else()
-   {
-       printf("\n wrong choice!!!!!");
-       system("cls");
-       goto up:
-   }*/
 
  }
  printf("\n Press enter to go back......");
@@ -394,8 +390,8 @@ int login()
     int confirm=0;
     char user[15];
     char pass[15];
-    char original_user[25]="admin";
-    char original_pass[15]="admin";
+    char original_user[25]="admin";  //user name
+    char original_pass[15]="admin";  //password
     do
     {
         printf("\n\nEnter you USER NAME:");
