@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <string.h>
-#include <ctype.h>
 
 
 //Global variables.....
@@ -313,7 +312,21 @@ void buy()
 
 }
 
-
+void support()
+{
+    char ch[200];
+    FILE *help;
+    help=fopen("available.txt","w+");
+    printf("enter your problems\n");
+    getchar();
+    gets(ch);
+    fprintf(help,"%s",ch);
+    fclose(help);
+    printf("\n Press enter to go back.....");
+    getch();
+    system("cls");
+    users();
+}
 void end()
 {
    printf("\t\t\t\t\t\t  FARM MANGEMENT SYSTEM");
