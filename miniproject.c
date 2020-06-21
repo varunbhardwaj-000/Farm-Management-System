@@ -6,7 +6,6 @@
 
 //Global variables.....
 int user;
-int cr=97,cp=56,ct=67,cw=45,cb=74;
 
 //Function prototypes....
 void intro();
@@ -28,15 +27,7 @@ int login();
 void end();
 void buy();
 
-//structure definition....
-struct list
-{
-	char crop[20];
-	int we;
-	int qpr;
-}items;
-
-
+//structure definition...
 //Function definitions....
 void intro()
 {
