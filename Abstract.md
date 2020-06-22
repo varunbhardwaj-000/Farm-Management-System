@@ -25,14 +25,14 @@ and features to add amount. thus that all we contain in our mini
 project.
 
 Aim Of The Project:
-[]   The main objective of our C project on Farm Management System 
+1.  The main objective of our C project on Farm Management System 
 is to manage details about different crops. 
-[] Provide different irrigation methods and cropa suggestions 
+2. Provide different irrigation methods and cropa suggestions 
 for different soils
-[] And easier way to handle selling and buying of crops
-[] A portal through which farmer can tell their problems to 
+3. And easier way to handle selling and buying of crops
+4. A portal through which farmer can tell their problems to 
 authorities.
-[] the code includes mainly functions and file handling
+5. the code includes mainly functions and file handling
 
 
 
