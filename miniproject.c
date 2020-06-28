@@ -313,6 +313,7 @@ void help()
 				 skipped instead of gets() or fgets() or any other similar function*/
     gets(ch);
     fprintf(help,"%s",ch);
+    fprintf(help,"\n");
     fclose(help);
     printf("\n Press enter to go back.....");
     getch();
@@ -393,6 +394,7 @@ num=sum+num;
 FILE *fund2;
 fund2=fopen("funds.txt","w+");
 fprintf(fund2,"%d",num);
+printf("\n total available funds = %d",num);
 fclose(fund2);
 printf("\n Press enter to go back.....");
 getch();
