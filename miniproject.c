@@ -20,14 +20,13 @@ void management();
 void farmer();
 void customer();
 void funds();
-void support();
+void help();
 int login_man();
 void add_items();
 int login();
 void end();
 void buy();
 
-//structure definition...
 //Function definitions....
 void intro()
 {
@@ -214,7 +213,7 @@ void farmer()
         }
         else if(op==2)
         {
-            support();
+            help();
         }
 
         else if(op==3)
@@ -303,7 +302,7 @@ void buy()
 
 }
 
-void support()
+void help()
 {
     char ch[200];
     FILE *help;
